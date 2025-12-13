@@ -27,13 +27,13 @@
     *   `system_prompts/`: 用于设定 AI 行为和思维框架的系统级提示词。
     *   `user_prompts/`: 用户自定义或常用的提示词。
 
-2.  **提示词库管理工具 (`prompts/prompts-library/`):**
+2.  **提示词库管理工具 (`libs/external/prompts-library/`):**
     *   提供 Python 工具 (`main.py`)，用于在 Excel 工作簿 (`prompt_excel/`) 和 Markdown 文档 (`prompt_docs/`) 之间进行提示词的相互转换。
     *   支持交互式和非交互式操作。
 
 3.  **技能库 (`skills/`):**
     *   一个模块化的技能集合，为 AI 提供了特定工具和领域的知识。
-    *   每个技能（如 `ccxt`, `postgresql`, `telegram-dev`）都包含独立的 `SKILL.md` 描述、参考资料和脚本。
+    *   每个技能（如 `ccxt`, `postgresql`, `telegram-dev`）都包含独立的 `SKILL.md` 描述, 参考资料和脚本。
 
 4.  **项目备份工具 (`backups/`):**
     *   `快速备份.py` 脚本能根据 `.gitignore` 规则智能地打包项目文件为 `.tar.gz` 格式。
@@ -41,34 +41,48 @@
 5.  **知识库与文档 (`documents/`):**
     *   包含代码组织、开发经验、系统提示词构建原则、项目架构模板等各类文档。
 
+6.  **外部工具与个人配置 (`libs/external/`):**
+    *   存放非核心项目代码但有用的外部工具、个人配置或实验性代码。例如：`my-nvim/` (nvim 配置), `XHS-image-to-PDF-conversion/` (图片转PDF工具)。
+
 ## 文件结构 (File Structure)
 
 ```
 .
+├── .gitignore                   # Git 版本控制忽略文件配置
 ├── AGENTS.md                    # 面向 AI Agent 的贡献与行为准则。
 ├── CLAUDE.md                    # 面向 Claude 模型的上下文与指令。
+├── CODE_OF_CONDUCT.md           # 项目行为准则。
+├── CONTRIBUTING.md              # 贡献指南。
 ├── GEMINI.md                    # 面向 Gemini 模型的上下文与指令 (本文档)。
-├── README.md                    # 项目主文档，包含项目概览、使用指南等。
+├── LICENSE                      # 项目许可证。
 ├── Makefile                     # 项目自动化脚本 (lint, backup 等)。
+├── README.md                    # 项目主文档，包含项目概览、使用指南等。
 │
 ├── backups/                     # 项目备份脚本。
-│   ├── 一键备份.sh
-│   └── 快速备份.py
+│   ├── 一键备份.sh              # 一键备份脚本。
+│   └── 快速备份.py              # 快速备份 Python 脚本。
 │
 ├── documents/                   # 存放各类说明文档、经验总结和配置。
+│   └── ...                      # 更多文档内容。
 │
-├── libs/                        # 通用库代码 (当前为骨架)。
-│   ├── common/
-│   ├── database/
-│   └── external/
+├── libs/                        # 核心库代码。
+│   ├── common/                  # 通用功能和工具库。
+│   │   ├── __init__.py          # Python 包初始化文件。
+│   │   ├── models/              # 数据模型定义。
+│   │   └── utils/               # 实用工具函数。
+│   ├── database/                # 数据库相关代码。
+│   └── external/                # 外部工具、个人配置或实验性代码。
+│       ├── AGENTS.md            # AI Agent 相关的外部文档。
+│       ├── prompts-library/     # 提示词库管理工具 (Excel-Markdown 互转)。
+│       │   ├── main.py          # 提示词库管理工具主程序。
+│       │   ├── requirements.txt # 工具依赖。
+│       │   ├── prompt_excel/    # Excel 格式提示词。
+│       │   └── prompt_docs/     # Markdown 格式提示词文档。
+│       ├── my-nvim/             # 个人 Neovim 配置。
+│       └── XHS-image-to-PDF-conversion/ # 小红书图片转 PDF 工具。
 │
 ├── prompts/                     # 核心资产：AI 提示词库。
 │   ├── coding_prompts/          # 编程与代码生成相关提示词。
-│   ├── prompts-library/         # 提示词库管理工具 (Excel-Markdown 互转)。
-│   │   ├── main.py
-│   │   ├── requirements.txt
-│   │   ├── prompt_excel/
-│   │   └── prompt_docs/
 │   ├── system_prompts/          # AI 系统级提示词。
 │   └── user_prompts/            # 用户自定义提示词。
 │
