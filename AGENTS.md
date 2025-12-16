@@ -155,10 +155,6 @@ When modifying this repository:
 ├── Makefile                     # 项目自动化脚本 (lint, backup 等)。
 ├── README.md                    # 项目主文档，包含项目概览、使用指南等。
 │
-├── backups/                     # 项目备份脚本。
-│   ├── 一键备份.sh              # 一键备份脚本。
-│   └── 快速备份.py              # 快速备份 Python 脚本。
-│
 ├── documents/                   # 存放各类说明文档、经验总结和配置。
 │   └── ...                      # 更多文档内容。
 │
