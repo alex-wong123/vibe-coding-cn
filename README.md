@@ -113,45 +113,55 @@
 * 测试可交给 AI，**断言人审**
 * 代码一多就**切会话**
 
-## 📋 器
+## 📋 工具集 (Toolset)
 
-- [**微软大战代码**](https://code.visualstudio.com/)，集成开发环境，初学者地基，你可以在这里手动修改和方便的阅读代码，cursor 更简单直观适合新手，插件现在应该只推荐一个就是 Local History
-- **虚拟环境.venv**，有了这个再也不用装环境了，直接命令 ai 必须安装和全程使用虚拟环境（.venv）（记得写入你的AGENTS或者CLAUDE的md文件的记忆里面）就行了，一键配置好再也不用浪费时间配环境了，主要是适用于 python
-- [**Claude Opus 4.5**](https://claude.ai/new)，在 Claude Code 中使用，很贵，但是尼区 iOS 订阅要便宜几百人民币，快 + 效果好，顶中顶，有 CLI 和 IDE 插件
-- [**gpt-5.1-codex.1-codex (xhigh)**](https://chatgpt.com/codex/)，在 Codex CLI 中使用，顶中顶，除了慢其他没得挑，大项目复杂逻辑唯一解，买 ChatGPT 会员就能用，有 CLI 和 IDE 插件
-- [**Droid**](https://factory.ai/news/terminal-bench)，这里面的 Claude Opus 4.5 体感比 Claude Code 原生还强，顶，有 CLI
-- [**Kiro**](https://kiro.dev/)，这里面的 Claude Opus 4.5 目前免费，就是 CLI 看不到正在运行的情况，没有找到恢复对话，有客户端和 CLI
-- [**Gemini CLI**](https://geminicli.com/)，目前免费用，干脏活用，Claude Code 或 Codex 写好的脚本拿它来执行可以，整理文档和找思路也合适，有客户端和 CLI
-- [**antigravity**](https://antigravity.google/)，谷歌的，可以免费用 Claude Opus 4.5 和 Gemini 3.0 Pro，大善人
-- [**AI Studio**](https://aistudio.google.com/prompts/new_chat)，谷歌家的，免费用 Gemini 3.0 Pro 和 Nano Banana
-- [**Gemini Enterprise**](https://cloud.google.com/gemini-enterprise)，谷歌企业版，目前能免费用 Nano Banana Pro
-- [**Augment**](https://app.augmentcode.com/)，上下文引擎和提示词优化按钮神中神，新手直接用它，点按钮自动帮你写好提示词，懒人必备
-- [**Cursor**](https://cursor.com/)，已经占领用户心智高地，人尽皆知
-- [**Windsurf**](https://windsurf.com/)，新用户有免费额度
-- [**Ollama**](https://ollama.com/)，本地模型 CLI 管理器，拉模型、跑模型一条命令，可用本地部署一些开源的模型
-- [**Warp**](https://www.warp.dev/)，AI 终端，体验不错，写命令和解释错误挺省心
-- [**GitHub Copilot**](https://github.com/copilot)，没深度用过
-- [**Kimi K2**](https://www.kimi.com/)，国产，还行，干脏活和简单任务用，之前 2 元一个 key，一周 1024 次调用，性价比高
-- [**GLM**](https://bigmodel.cn/)，国产，听说很强，体感接近 Claude Sonnet 4
-- [**Qwen**](https://qwenlm.github.io/qwen-code-docs/zh/cli/)，阿里出的，CLI 有免费额度
-- [**提示词库（直接复制粘贴即可用）**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1)
-- [**其他编程工具的系统提示词学习库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools)
-- [**Skills 制作器（下好后让 AI 按你的需求生成 Skills）**](https://github.com/yusufkaraaslan/Skill_Seekers)
-- [**元提示词（生成提示词的提示词）**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220)
-- [**通用项目架构模板**](./documents/通用项目架构模板.md)，一键丢给 AI 就能搭好目录结构
-- [**Augment 提示词优化器**](https://app.augmentcode.com/)，提示词优化是真的好用，强烈推荐
-- [**Mermaid Chart**](https://www.mermaidchart.com/)，架构 / 思维导图可视化，做架构图，序列图的时候复制到这里看
-- [**NotebookLM**](https://notebooklm.google.com/)，资料 AI 解读、听音频、看思维导图、配合 Nano Banana 图片
-- [**Zread**](https://zread.ai/)，AI 读 GitHub 仓库神器，减少造轮子
-- [**元技能：Skills 的 Skills**](./skills/claude-skills/SKILL.md)，就是生成 Skills 的 Skills
-- [**tmux快捷键大全**](./documents/tmux快捷键大全.md)，远程链接ssh用，再也不怕ssh端了终端会话丢失了
-- [**二哥的Java进阶之路**](https://javabetter.cn/)，里面有小工具的详细配置教程
-- [**tmux**](https://github.com/tmux/tmux)，终端复用神器，一个窗口顶多个终端会话，分屏、会话保持、远程不断线，服务器党 / 多项目并行必备
-- [**nvim**](https://github.com/neovim/neovim)，现代化 Vim，插件生态成熟、性能极强，适合写代码、改配置、SSH 远程干活，键盘流天花板
-- [**LazyVim**](https://github.com/LazyVim/LazyVim)，基于 Neovim 的成体系配置框架，预置 LSP / 补全 / 调试 / Git 等全套能力，开箱即用又能逐步深度定制，不想从零配 nvim 的最优解
-- [**LazyVim快捷键大全**](./documents/LazyVim快捷键大全.md)，系统掌握 LazyVim 键盘流，提升编码效率
-- [**DBeaver**](https://dbeaver.io/)，全能数据库客户端，支持 MySQL / PostgreSQL / SQLite / ClickHouse 等，连本地、服务器、SSH 隧道都很顺，查数据、改表结构、看执行计划都很舒服，工程党必备
-- [**虚拟卡**](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite)，注册有这个卡你可以注册 aws 赠送的 100 美金的服务器额度，可以用很久，选澳大利亚地区的通过很快
+### 集成开发环境 (IDE) & 终端
+
+*   [**Visual Studio Code**](https://code.visualstudio.com/): 一款功能强大的集成开发环境，适合代码阅读与手动修改。其 `Local History` 插件对项目版本管理尤为便捷。
+*   [**Cursor**](https://cursor.com/): 深度集成 AI 功能的 IDE，在开发者社区中已获得广泛认可。
+*   [**Warp**](https://www.warp.dev/): 集成 AI 功能的现代化终端，能有效提升命令行操作和错误排查的效率。
+*   [**Neovim (nvim)**](https://github.com/neovim/neovim): 一款高性能的现代化 Vim 编辑器，拥有丰富的插件生态，是键盘流开发者的首选。
+*   [**LazyVim**](https://github.com/LazyVim/LazyVim): 基于 Neovim 的配置框架，预置了 LSP、代码补全、调试等全套功能，实现了开箱即用与深度定制的平衡。
+
+### AI 模型 & 服务
+
+*   [**Claude Opus 4.5**](https://claude.ai/new): 性能强大的 AI 模型，通过 Claude Code 等平台提供服务，并支持 CLI 和 IDE 插件。
+*   [**gpt-5.1-codex.1-codex (xhigh)**](https://chatgpt.com/codex/): 适用于处理大型项目和复杂逻辑的 AI 模型，可通过 Codex CLI 等平台使用。
+*   [**Droid**](https://factory.ai/news/terminal-bench): 提供对 Claude Opus 4.5 等多种模型的 CLI 访问。
+*   [**Kiro**](https://kiro.dev/): 提供免费的 Claude Opus 4.5 模型访问，并提供客户端及 CLI 工具。
+*   [**Gemini CLI**](https://geminicli.com/): 提供对 Gemini 模型的免费访问，适合执行脚本、整理文档和探索思路。
+*   [**antigravity**](https://antigravity.google/): Google 提供的免费 AI 服务，支持使用 Claude Opus 4.5 和 Gemini 3.0 Pro。
+*   [**AI Studio**](https://aistudio.google.com/prompts/new_chat): Google 提供的免费服务，支持使用 Gemini 3.0 Pro 和 Nano Banana。
+*   [**Gemini Enterprise**](https://cloud.google.com/gemini-enterprise): 面向企业用户的 Google AI 服务。
+*   [**GitHub Copilot**](https://github.com/copilot): 由 GitHub 和 OpenAI 联合开发的 AI 代码补全工具。
+*   [**Kimi K2**](https://www.kimi.com/): 一款国产 AI 模型，适用于多种常规任务。
+*   [**GLM**](https://bigmodel.cn/): 由智谱 AI 开发的国产大语言模型。
+*   [**Qwen**](https://qwenlm.github.io/qwen-code-docs/zh/cli/): 由阿里巴巴开发的 AI 模型，其 CLI 工具提供免费使用额度。
+
+### 开发与辅助工具
+
+*   **虚拟环境 (.venv)**: 强烈推荐使用，可实现项目环境的一键配置与隔离，特别适用于 Python 开发。
+*   [**Augment**](https://app.augmentcode.com/): 提供强大的上下文引擎和提示词优化功能。
+*   [**Windsurf**](https://windsurf.com/): 为新用户提供免费额度的 AI 开发工具。
+*   [**Ollama**](https://ollama.com/): 本地大模型管理工具，可通过命令行方便地拉取和运行开源模型。
+*   [**Mermaid Chart**](https://www.mermaidchart.com/): 用于将文本描述转换为架构图、序列图等可视化图表。
+*   [**NotebookLM**](https://notebooklm.google.com/): 一款用于 AI 解读资料、音频和生成思维导图的工具。
+*   [**Zread**](https://zread.ai/): AI 驱动的 GitHub 仓库阅读工具，有助于快速理解项目代码。
+*   [**tmux**](https://github.com/tmux/tmux): 强大的终端复用工具，支持会话保持、分屏和后台任务，是服务器与多项目开发的理想选择。
+*   [**DBeaver**](https://dbeaver.io/): 一款通用数据库管理客户端，支持多种数据库，功能全面。
+
+### 资源与模板
+
+*   [**提示词库 (在线表格)**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1): 一个包含大量可直接复制使用的各类提示词的在线表格。
+*   [**第三方系统提示词学习库**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools): 用于学习和参考其他 AI 工具的系统提示词。
+*   [**Skills 制作器**](https://github.com/yusufkaraaslan/Skill_Seekers): 可根据需求生成定制化 Skills 的工具。
+*   [**元提示词**](https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=1770874220#gid=1770874220): 用于生成提示词的高级提示词。
+*   [**通用项目架构模板**](./documents/通用项目架构模板.md): 可用于快速搭建标准化的项目目录结构。
+*   [**元技能：Skills 的 Skills**](./skills/claude-skills/SKILL.md): 用于生成 Skills 的元技能。
+*   [**tmux快捷键大全**](./documents/tmux快捷键大全.md): tmux 的快捷键参考文档。
+*   [**LazyVim快捷键大全**](./documents/LazyVim快捷键大全.md): LazyVim 的快捷键参考文档。
+*   [**二哥的Java进阶之路**](https://javabetter.cn/): 包含多种开发工具的详细配置教程。
+*   [**虚拟卡**](https://www.bybit.com/cards/?ref=YDGAVPN&source=applet_invite): 可用于注册云服务等需要国际支付的场景。
 
 ---
 
