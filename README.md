@@ -63,11 +63,11 @@
 
 <!-- 资源直达 -->
 <p>
-  <a href="./i18n/zh/prompts/"><img src="https://img.shields.io/badge/prompts-精选-purple?style=for-the-badge" alt="提示词精选"></a>
-  <a href="./i18n/zh/skills/"><img src="https://img.shields.io/badge/skills-技能库-forestgreen?style=for-the-badge" alt="skills技能大全"></a>
-  <a href="./libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/prompts-全量文档-orange?style=for-the-badge" alt="提示词大全"></a>
-  <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/prompts-在线库-blue?style=for-the-badge" alt="在线提示词库"></a>
-  <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/prompts-第三方系统库-slateblue?style=for-the-badge" alt="系统提示词仓库"></a>
+  <a href="./i18n/zh/prompts/"><img src="https://img.shields.io/badge/提示词-精选-purple?style=for-the-badge" alt="提示词精选"></a>
+  <a href="./i18n/zh/skills/"><img src="https://img.shields.io/badge/skills-技能大全-forestgreen?style=for-the-badge" alt="skills技能大全"></a>
+  <a href="./libs/external/prompts-library/prompt_docs/"><img src="https://img.shields.io/badge/提示词-大全-orange?style=for-the-badge" alt="提示词大全"></a>
+  <a href="https://docs.google.com/spreadsheets/d/1ngoQOhJqdguwNAilCl1joNwTje7FWWN9WiI2bo5VhpU/edit?gid=2093180351#gid=2093180351&range=A1"><img src="https://img.shields.io/badge/提示词-在线表格(推荐)-blue?style=for-the-badge" alt="提示词在线表格（推荐）"></a>
+  <a href="https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"><img src="https://img.shields.io/badge/系统提示词-仓库-slateblue?style=for-the-badge" alt="系统提示词仓库"></a>
 </p>
 
 [📚 相关文档](#-相关文档与资源)
