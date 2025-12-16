@@ -176,6 +176,7 @@ When modifying this repository:
 │       │   ├── prompt_excel/    # Excel 格式提示词。
 │       │   ├── prompt_docs/     # Markdown 格式提示词文档。
 │       │   └── ... (其他 prompts-library 内部文件)
+│       ├── l10n-tool/           # 多语言批量翻译脚本，保护代码块，先机翻后润色。
 │       ├── my-nvim/             # 个人 Neovim 配置。
 │       └── XHS-image-to-PDF-conversion/ # 小红书图片转 PDF 工具。
 │
